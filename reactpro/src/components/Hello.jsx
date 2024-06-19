@@ -1,4 +1,11 @@
+// function testfunction() {
+//   return "Testing";
+// }
 function Hello() {
-  return <h1>Hello Nigga</h1>;
+  return (
+    <div>
+      <h1>Hello Nigga </h1>
+    </div>
+  );
 }
 export default Hello;
