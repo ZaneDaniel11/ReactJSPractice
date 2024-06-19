@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
       <Headers />
-      <Hello />
+      <Hello greatings="Hello" name="Zane" />
     </div>
   );
 }

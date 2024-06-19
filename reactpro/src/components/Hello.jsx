@@ -1,10 +1,12 @@
 // function testfunction() {
 //   return "Testing";
 // }
-function Hello() {
+function Hello(props) {
   return (
     <div>
-      <h1>Hello Nigga </h1>
+      <h1>
+        {props.greatings} {props.name}
+      </h1>
     </div>
   );
 }
