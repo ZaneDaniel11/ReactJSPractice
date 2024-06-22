@@ -1,3 +1,8 @@
 export default function Conditional() {
-  return <div></div>;
+  const condition = true;
+  if (condition) {
+    return <div>Welcome</div>;
+  } else {
+    return <div>Login</div>;
+  }
 }
