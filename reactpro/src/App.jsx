@@ -16,15 +16,19 @@ import MultInput from "./components/MultInput";
 import PracForm from "./components/PracticeForm";
 import SearchData from "./components/fetch";
 import Fdata from "./components/fetch";
-
+import { ErrorBoundary } from "react-error-boundery";
 import { Suspense } from "react";
 
 function App() {
   return (
     <div className="App">
-      <Suspense fallback={<div>Loading.....</div>}>
-        <SearchData />
-      </Suspense>
+      <ErrorBoundary
+        fallback={<div>Something went wrong, please try again later.</div>}
+      >
+        <Suspense fallback={<div>Loading.....</div>}>
+          <SearchData />
+        </Suspense>
+      </ErrorBoundary>
     </div>
   );
 }
