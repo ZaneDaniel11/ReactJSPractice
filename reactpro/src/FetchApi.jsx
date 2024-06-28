@@ -22,6 +22,7 @@ export default function FetchAPI() {
   }, []);
 
   return (
+    
     <div>
       <ul>
         {query.map((team) => (

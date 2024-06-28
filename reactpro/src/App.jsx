@@ -17,10 +17,14 @@ import PracForm from "./components/PracticeForm";
 import SearchData from "./components/fetch";
 import Fdata from "./components/fetch";
 
+import { Suspense } from "react";
+
 function App() {
   return (
     <div className="App">
-      <SearchData />
+      <Suspense fallback={<div>Loading.....</div>}>
+        <SearchData />
+      </Suspense>
     </div>
   );
 }
