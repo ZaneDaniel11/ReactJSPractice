@@ -1,10 +1,9 @@
-import Condi from "./components/Condi";
-import Hello from "./components/Hello";
-import Fruits from "./components/Fruit";
+import Message from "./components/Message";
+
 function App() {
   return (
     <div className="App">
-      <Fruits />
+      <Message />
     </div>
   );
 }
