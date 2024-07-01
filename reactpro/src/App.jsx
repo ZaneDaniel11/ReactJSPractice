@@ -14,12 +14,13 @@ import Form from "./components/Form";
 
 import MultInput from "./components/MultInput";
 import PracForm from "./components/PracticeForm";
+import SearchData from "./components/fetch";
 import Fdata from "./components/fetch";
 
 function App() {
   return (
     <div className="App">
-      <FetchAPI />
+      <SearchData />
     </div>
   );
 }
