@@ -9,7 +9,7 @@ function Hello(props) {
     <div>
       <h1>
         {/* {name} {greatings} */}
-        {props.greatings} {props.name}
+        {props.data.message} {props.data.name}
       </h1>
     </div>
   );
