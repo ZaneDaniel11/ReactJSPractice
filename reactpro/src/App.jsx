@@ -4,7 +4,7 @@ import Fruits from "./components/Fruit";
 function App() {
   return (
     <div className="App">
-      <Condi />
+      <Fruits />
     </div>
   );
 }
