@@ -1,8 +1,10 @@
 export default function Conditional() {
-  const condition = true;
-  if (condition) {
-    return <div>Welcome</div>;
+  const display = false;
+  let message;
+  if (display) {
+    message = <h1>True</h1>;
   } else {
-    return <div>Login</div>;
+    message = <h2>False</h2>;
   }
+  return message;
 }
