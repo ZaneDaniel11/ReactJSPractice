@@ -1,4 +1,5 @@
 import FetchApi from "./FetchApi";
+import Hide from "./Practice/Hide";
 import Search from "./Practice/Search";
 import Todo from "./Todo/Todo";
 import Users from "./UseState";
@@ -16,6 +17,7 @@ function App() {
   return (
     <div className="App">
       <Search />
+      <Hide />
     </div>
   );
 }
