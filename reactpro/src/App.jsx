@@ -1,4 +1,5 @@
 import FetchApi from "./FetchApi";
+import Search from "./Practice/Search";
 import Todo from "./Todo/Todo";
 import Users from "./UseState";
 import UseEffectPrac from "./Useeffect/UseeffectPrac";
@@ -14,7 +15,7 @@ import Fdata from "./components/fetch";
 function App() {
   return (
     <div className="App">
-      <UseEffectPrac />
+      <Search />
     </div>
   );
 }
