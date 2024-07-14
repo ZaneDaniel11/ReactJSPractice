@@ -2,6 +2,10 @@ import { useState } from "react";
 
 export default function PracForm() {
   const [name, SetName] = useState({ FirstName: "", LastName: "" });
+
+  function HandleSubmit(e) {
+    e.preventDefault();
+  }
   return (
     <div>
       {name.FirstName}-{name.LastName}
@@ -16,6 +20,8 @@ export default function PracForm() {
           type="text"
           value={name.LastName}
         />
+
+        <button onClick={(e) => HandleSubmit(e)}></button>
       </form>
     </div>
   );
