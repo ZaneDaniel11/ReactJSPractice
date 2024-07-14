@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function Form() {
-  const [data, Formdate] = useState("");
+  const [data, Formdate] = useState();
 
   function Data(e) {
     Formdate(e.target.value);
