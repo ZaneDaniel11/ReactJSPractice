@@ -1,9 +1,10 @@
 import Message from "./components/Message";
+import Fdata from "./components/fetch";
 
 function App() {
   return (
     <div className="App">
-      <Message />
+      <Fdata />
     </div>
   );
 }
