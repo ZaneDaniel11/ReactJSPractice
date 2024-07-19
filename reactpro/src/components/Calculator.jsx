@@ -1,40 +1,37 @@
 import { useState } from "react";
 import "./calculator.css";
 export default function Caculator() {
-  const [value1, Value] = useState("");
-  const [value2, Value2] = useState("");
-
-  const [result, Result1] = useState(value1, value2);
+  const [value1, Value] = useState({ valu1: "", value2: "" });
+  const [value3, Value2] = useState("");
 
   function add() {
-    Result1(value1 + value2);
+    Value2(value1.valu1 + value1.value2);
   }
   function mult() {
-    Result1(value1 * value2);
+    Value2(value1.valu1 * value1.value2);
   }
   function min() {
-    Result1(value1 - value2);
+    Value2(value1.valu1 - value1.value2);
   }
 
   function devide() {
-    Result1(value1 / value2);
+    Value2(value1.valu1 / value1.value2);
   }
   return (
     <div class="calculator">
       <div className="headerContainer">
-        {" "}
         <h1>Calculator</h1>
       </div>
-      <h1>{result}</h1>
+      <h1>{value3}</h1>
       <input
-        onChange={(e) => Value(parseInt(e.target.value))}
+        onChange={(e) => Value({ ...value1, valu1: parseInt(e.target.value) })}
         type="text"
-        value={value1}
+        value={value1.valu1}
       />
       <input
         type="text"
-        onChange={(e) => Value2(parseInt(e.target.value))}
-        value={value2}
+        onChange={(e) => Value({ ...value1, value2: parseInt(e.target.value) })}
+        value={value1.value2}
       />
       <div className="buttonContainer">
         <button onClick={add}>+</button>
