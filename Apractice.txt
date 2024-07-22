@@ -1,2 +1,5 @@
 imrs
 parseInt()
+
+composer create-project laravel/laravel projectname
+
