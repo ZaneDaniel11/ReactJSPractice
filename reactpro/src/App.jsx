@@ -1,3 +1,4 @@
+import FetchApi from "./FetchApi";
 import Todo from "./Todo/Todo";
 import Users from "./UseState";
 
@@ -12,7 +13,7 @@ import Fdata from "./components/fetch";
 function App() {
   return (
     <div className="App">
-      <Caculator />
+      <FetchApi />
     </div>
   );
 }
