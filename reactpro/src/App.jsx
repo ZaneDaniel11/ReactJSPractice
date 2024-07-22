@@ -1,4 +1,5 @@
 import Todo from "./Todo/Todo";
+import Users from "./UseState";
 
 import Caculator from "./components/Calculator";
 
@@ -11,7 +12,7 @@ import Fdata from "./components/fetch";
 function App() {
   return (
     <div className="App">
-      <Caculator />
+      <Users />
     </div>
   );
 }
