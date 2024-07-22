@@ -12,7 +12,7 @@ import Fdata from "./components/fetch";
 function App() {
   return (
     <div className="App">
-      <Users />
+      <Caculator />
     </div>
   );
 }
