@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import API from "./Api";
 
 const URL = "https://api.balldontlie.io/v1/teams";
 
@@ -24,9 +25,10 @@ export default function FetchAPI() {
     <div>
       <ul>
         {query.map((team) => (
-          <li key={team.id}>
-            {team.conference}-{team.division}-{team.city}
-          </li>
+          // <li key={team.id}>
+          //   {team.conference}-{team.division}-{team.city}
+          // </li>
+          <API key={team.id} confi={team.conference} />
         ))}
       </ul>
     </div>
