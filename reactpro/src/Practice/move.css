@@ -1,0 +1,14 @@
+.Parents {
+  position: relative;
+}
+
+button {
+  position: absolute;
+}
+
+.Move {
+  bottom: 0%;
+}
+.moving {
+  right: 0%;
+}
