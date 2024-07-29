@@ -1,3 +1,4 @@
+import FetchAPI from "./FetchApi";
 import FetchApi from "./FetchApi";
 import Hide from "./Practice/Hide";
 import Practice from "./Practice/Pract1";
@@ -18,7 +19,7 @@ import Fdata from "./components/fetch";
 function App() {
   return (
     <div className="App">
-      <Movebt />
+      <FetchAPI />
     </div>
   );
 }

@@ -25,10 +25,9 @@ export default function FetchAPI() {
     <div>
       <ul>
         {query.map((team) => (
-          // <li key={team.id}>
-          //   {team.conference}-{team.division}-{team.city}
-          // </li>
-          <API key={team.id} confi={team.conference} />
+          <li key={team.id}>
+            {team.conference}-{team.division}-{team.city}
+          </li>
         ))}
       </ul>
     </div>
